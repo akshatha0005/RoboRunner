@@ -1,4 +1,4 @@
-# CMPE202_TeamProject
+# CMPE202 Team Project
 
 The project is part of CMPE 202 SOFTWARE SYSTEMS ENGINEERING subject and is a team project. 
 
@@ -7,8 +7,13 @@ The objective of this project is to learn, understand and implement various desi
 
 ##Team Members:
   
-  Akshatha M
-  Kamlendra Singh Chauhan
-  Sindhuja Narra
-  Vaibhavi Jha
-  Kalpana Tripathi
+  Akshatha M 
+  
+  Kamlendra Singh Chauhan 
+  
+  Sindhuja Narra 
+  
+  Vaibhavi Jha 
+  
+  Kalpana Tripathi 
+  
