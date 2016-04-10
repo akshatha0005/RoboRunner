@@ -7,7 +7,7 @@ The objective of this project is to learn, understand and implement various desi
 
 ##Team Members:
   
-  Akshatha M 
+  Akshatha Madapura Anantharamu
   
   Kamlendra Singh Chauhan 
   
@@ -15,5 +15,5 @@ The objective of this project is to learn, understand and implement various desi
   
   Vaibhavi Jha 
   
-  Kalpana Tripathi 
+  Kalpana Jagdish Tripathi 
   
