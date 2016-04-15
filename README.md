@@ -15,5 +15,5 @@ The objective of this project is to learn, understand and implement various desi
   
   Vaibhavi Jha 
   
-  Kalpana Jagdish Tripathi 
+  Kalpana J Tripathi 
   
