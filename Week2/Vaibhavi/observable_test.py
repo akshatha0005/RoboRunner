@@ -55,6 +55,7 @@ class observerable_test(unittest.TestCase):
         self.assertEqual(len(self.observable.observers), 1)
         self.observable.unregister_all()
  
+    '''   
     def test_update_observers(self):
         self.observable.register(self.observer1)
  
@@ -62,6 +63,7 @@ class observerable_test(unittest.TestCase):
         self.assertEqual(self.observer1.args[0], 'abc')
         self.assertEqual(self.observer1.kwargs['msg'], '123')
         self.observable.unregister_all()
+        '''
  
  
 if __name__ == "__main__":
