@@ -4,8 +4,8 @@ using System.Collections;
 public class QuitGame : IMenuCommand
 {
 	private MainMenu mainMenu;
-	//Quit Game
-	public QuitGame(MainMenu mainMenu)
+    //Quit Game
+    /*public QuitGame(MainMenu mainMenu)
 	{
 		this.mainMenu = mainMenu;
 	}
@@ -13,7 +13,17 @@ public class QuitGame : IMenuCommand
 	//Action performed after quitting
 	public void DoAction(MenuManager menuManager){
 		mainMenu.QuitGame (menuManager);
-	}
+	}*/
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }
 
 

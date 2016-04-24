@@ -7,7 +7,8 @@ public class RoborunnerEnd
     public int SaveState()
     {
         //Return points collected and run time
-        return ObjOfRobo;
+        //return ObjOfRobo;
+        return -1;
     }
 
     public void exitGame()

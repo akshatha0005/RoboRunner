@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using AssemblyCSharp;
 
 
 public class ScoreSetter : MonoBehaviour {
@@ -39,12 +38,13 @@ public class ScoreSetter : MonoBehaviour {
 
 
 	private void ScoreAdder(){
-		Scorer.ScoreAdderForTime (1);
+//		Scorer.ScoreAdderForTime (1);
 	}
 	/* Round the score to int */
 	public int GetIntScore(){
 
-		return Scorer.GetScore ();
+        //	return Scorer.GetScore ();
+        return -1;
 		//return Mathf.RoundToInt (floatScore);
 	}
 
@@ -53,7 +53,7 @@ public class ScoreSetter : MonoBehaviour {
 		floatScore = 0;
 
 		//Setting score
-		Scorer.SetScore (0);
+		//Scorer.SetScore (0);
 
 		//reset startTime
 		startTime = Time.time;
