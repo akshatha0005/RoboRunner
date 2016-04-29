@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/RoboRunner.unity
+- path: Assets/ToonBot/Robot Test Scene(Free).unity
   isLoaded: 1
   isActive: 1
