@@ -1,7 +1,7 @@
 ﻿public interface MotionDetector
 {
 private IMotionDetector state;
-		public MotionDetector()
+		public MotionDetector ()
 		{
 			state = null;
 		}

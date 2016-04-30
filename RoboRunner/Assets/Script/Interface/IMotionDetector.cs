@@ -1,3 +1,3 @@
-﻿public interface IMenuCommand
+﻿public interface IMotionDetector
 {
 }
