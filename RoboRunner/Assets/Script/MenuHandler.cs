@@ -10,24 +10,17 @@
 using System;
 namespace AssemblyCSharp
 {
-	public class MainMenu
+	public class MenuHandler
 	{
 
-		MenuManager menuManager;
-		private string menuCommand;
-
-		public MainMenu ()
+		public MenuHandler ()
 		{
-
 		}
 
-		public void PlayGame(MenuManager menuManager){
-			menuManager.ToggleMenu ();
+		public void Execute(IMenuCommand gameOption, MenuManager menuManager){
+			gameOption.DoAction (menuManager);
 		}
 
-		public void QuitGame(MenuManager menuManager){
-			menuManager.QuitGameMethod ();
-		}
 
 	}
 }
