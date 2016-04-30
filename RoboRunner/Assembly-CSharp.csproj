@@ -45,16 +45,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\CameraFollow.cs" />
+     <Compile Include="Assets\Script\DeadState.cs" />
+     <Compile Include="Assets\Script\HighSpeedStrategy.cs" />
      <Compile Include="Assets\Script\Interface\GScoreSubject.cs" />
      <Compile Include="Assets\Script\Interface\IMenuCommand.cs" />
+     <Compile Include="Assets\Script\Interface\IMotionDetector.cs" />
      <Compile Include="Assets\Script\Interface\IScoreObserver.cs" />
      <Compile Include="Assets\Script\MainMenu.cs" />
      <Compile Include="Assets\Script\MenuManager.cs" />
+     <Compile Include="Assets\Script\MotionDetector.cs" />
+     <Compile Include="Assets\Script\PlayerStateContext.cs" />
      <Compile Include="Assets\Script\QuitGame.cs" />
      <Compile Include="Assets\Script\RoboRunnerStarter.cs" />
      <Compile Include="Assets\Script\RoborunnerEnd.cs" />
      <Compile Include="Assets\Script\ScoreObserver.cs" />
      <Compile Include="Assets\Script\ScoreSetter.cs" />
+     <Compile Include="Assets\Script\ScoreSubject.cs" />
      <Compile Include="Assets\Script\StartGame.cs" />
      <Compile Include="Assets\ToonBot\ToonBot(Free) Assets\Controller\RobotTestScriptFree.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
