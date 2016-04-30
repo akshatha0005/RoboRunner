@@ -1,7 +1,7 @@
-
+using Project202;
 using System;
 using UnityEngine;
-namespace Project202
+namespace AssemblyCSharp
 {
 	public abstract class ScoreObserver 
 	{
