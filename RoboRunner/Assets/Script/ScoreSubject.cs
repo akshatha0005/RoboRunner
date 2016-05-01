@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections;
+using Project202;
 using UnityEngine;
 namespace AssemblyCSharp
 {
@@ -33,7 +34,7 @@ namespace AssemblyCSharp
 
 		public void NotifyObservers(){
 			foreach (IScoreObserver ob in observers) {
-				ob.Update(score);
+				//ob.Update(score);
 			}
 		}
 
@@ -50,6 +51,20 @@ namespace AssemblyCSharp
 			Debug.Log ("Subject State" + score);
 		}
 
-	}
+        void IScoreSubject.Attach(IScoreObserver ob)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IScoreSubject.Detach(IScoreObserver ob)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IScoreSubject.NotifyObservers()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
 
