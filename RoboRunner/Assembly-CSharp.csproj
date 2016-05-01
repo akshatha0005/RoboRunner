@@ -52,7 +52,10 @@
      <Compile Include="Assets\Script\Interface\IMenuCommand.cs" />
      <Compile Include="Assets\Script\Interface\IMotionDetector.cs" />
      <Compile Include="Assets\Script\Interface\IScoreObserver.cs" />
+     <Compile Include="Assets\Script\Interface\ISpeedStrategy.cs" />
+     <Compile Include="Assets\Script\LowSpeedStrategy.cs" />
      <Compile Include="Assets\Script\MainMenu.cs" />
+     <Compile Include="Assets\Script\MediumSpeedStrategy.cs" />
      <Compile Include="Assets\Script\MenuManager.cs" />
      <Compile Include="Assets\Script\MotionDetector.cs" />
      <Compile Include="Assets\Script\PlayerStateContext.cs" />
