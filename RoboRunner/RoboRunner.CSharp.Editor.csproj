@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F70A71A0-F45F-EDEA-1FBD-CBB36478B9E2}</ProjectGuid>
+    <ProjectGuid>{01F9DF22-54A3-604A-409A-053A60959E42}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Unity Web v3.5</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>WebPlayer:6</UnityBuildTarget>
     <UnityVersion>5.3.4f1</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -50,52 +50,51 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.EditorTestsRunner">
+      <HintPath>Library\UnityAssemblies\UnityEditor.EditorTestsRunner.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\ActiveState.cs" />
-    <Compile Include="Assets\Script\CameraFollow.cs" />
-    <Compile Include="Assets\Script\DeadState.cs" />
-    <Compile Include="Assets\Script\HighScoreSetter.cs" />
-    <Compile Include="Assets\Script\HighSpeedStrategy.cs" />
-    <Compile Include="Assets\Script\Interface\GScoreSubject.cs" />
-    <Compile Include="Assets\Script\Interface\IMenuCommand.cs" />
-    <Compile Include="Assets\Script\Interface\IMotionDetector.cs" />
-    <Compile Include="Assets\Script\Interface\IPlayerState.cs" />
-    <Compile Include="Assets\Script\Interface\IScoreObserver.cs" />
-    <Compile Include="Assets\Script\Interface\IScoreSubject.cs" />
-    <Compile Include="Assets\Script\Interface\IShape.cs" />
-    <Compile Include="Assets\Script\Interface\ISpeedStrategy.cs" />
-    <Compile Include="Assets\Script\LowSpeedStrategy.cs" />
-    <Compile Include="Assets\Script\MainMenu.cs" />
-    <Compile Include="Assets\Script\MediumSpeedStrategy.cs" />
-    <Compile Include="Assets\Script\MenuController.cs" />
-    <Compile Include="Assets\Script\MenuHandler.cs" />
-    <Compile Include="Assets\Script\MenuManager.cs" />
-    <Compile Include="Assets\Script\MotionDetector.cs" />
-    <Compile Include="Assets\Script\PlayerStateContext.cs" />
-    <Compile Include="Assets\Script\PointScore.cs" />
-    <Compile Include="Assets\Script\QuitGame.cs" />
-    <Compile Include="Assets\Script\RoboRunnerStarter.cs" />
-    <Compile Include="Assets\Script\RoborunnerEnd.cs" />
-    <Compile Include="Assets\Script\ScoreObserver.cs" />
-    <Compile Include="Assets\Script\ScoreSetter.cs" />
-    <Compile Include="Assets\Script\ScoreSubject.cs" />
-    <Compile Include="Assets\Script\SpeedContext.cs" />
-    <Compile Include="Assets\Script\SpeedManager.cs" />
-    <Compile Include="Assets\Script\StartGame.cs" />
-    <Compile Include="Assets\Script\SunScrollScript.cs" />
-    <Compile Include="Assets\Script\TerrainGenerator.cs" />
-    <Compile Include="Assets\Script\TimeScore.cs" />
-    <Compile Include="Assets\ToonBot\ToonBot(Free) Assets\Controller\RobotTestScriptFree.cs" />
+    <ProjectReference Include="RoboRunner.CSharp.csproj">
+      <Project>{F70A71A0-F45F-EDEA-1FBD-CBB36478B9E2}</Project>
+      <Name>RoboRunner.CSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
